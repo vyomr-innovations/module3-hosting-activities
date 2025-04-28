@@ -1,0 +1,107 @@
+[
+    {
+        "text":"Edible straw",
+        "value":"Reduce",
+         "bg":"#e15c5b"
+    },
+    {
+        "text":"Repair instead of throwing away",
+        "value":"Reduce",
+         "bg":"#e15c5b"
+    },
+    {
+        "text":"Use cloth napkin",
+        "value":"Reuse",
+         "bg":"#5794e3"
+    },
+    {
+        "text":"Make storage boxes from cardboard box",
+        "value":"Recycle",
+        "bg":"#69aa3c"
+    },
+    {
+        "text":"Use energy efficient CFL bulbs",
+        "value":"Reduce",
+         "bg":"#e15c5b"
+    },
+    {
+        "text":"Print on both sides",
+        "value":"Reduce",
+         "bg":"#e15c5b"
+    },
+    {
+        "text":"Takeaway disposable container",
+        "value":"Reduce",
+         "bg":"#e15c5b"
+    },
+    {
+        "text":"Lunchbox",
+        "value":"Reuse",
+         "bg":"#5794e3"
+    },
+    {
+        "text":"Refill a water bottle",
+        "value":"Reuse",
+         "bg":"#5794e3"
+    },
+    {
+        "text":"Use hand me down clothes",
+        "value":"Reuse",
+         "bg":"#5794e3"
+    } ,
+    {
+        "text":"Donate toys",
+        "value":"Reuse",
+         "bg":"#5794e3"
+    },
+    {
+        "text":"Donate toys",
+        "value":"Reuse",
+         "bg":"#5794e3"
+    },
+    {
+        "text":"Reduce number of car trips",
+        "value":"Reduce",
+         "bg":"#e15c5b"
+    } ,
+    {
+        "text":"Make a doormat with rags",
+        "value":"Recycle",
+        "bg":"#69aa3c"
+    } ,
+    {
+        "text":"Buy stuff at garage sale",
+        "value":"Reuse",
+         "bg":"#5794e3"
+    },
+     {
+        "text":"Make bags from newspaper",
+        "value":"Recycle",
+        "bg":"#69aa3c"
+    },
+    {
+        "text":"Walk to school",
+        "value":"Reduce",
+         "bg":"#e15c5b"
+    },
+    {
+        "text":"Steel straw",
+        "value":"Reuse",
+         "bg":"#5794e3"
+    },
+     {
+        "text":"Donate Books",
+        "value":"Reuse",
+         "bg":"#5794e3"
+    },
+     {
+        "text":"Unplug wires when not in use",
+        "value":"Reduce",
+         "bg":"#e15c5b"
+    },
+    {
+        "text":"Trash free lunch",
+        "value":"Reduce",
+         "bg":"#e15c5b"
+    }
+]

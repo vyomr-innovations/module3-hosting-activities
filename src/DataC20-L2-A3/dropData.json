@@ -1,0 +1,14 @@
+[
+    {
+        "value":"Reduce",
+        "bg":"#e15c5b"
+    },
+    {
+        "value":"Reuse",
+        "bg":"#5794e3"
+    },
+     {
+        "value":"Recycle",
+        "bg":"#69aa3c"
+    }
+]
