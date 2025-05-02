@@ -1,0 +1,66 @@
+[
+    {
+        "name":"correct",
+        "bg":"#EF88AD",
+        "top":"-5%",
+        "left":"32%",
+        "right":"",
+        "bottom":"",
+        "text":"Your language should be free of factual and grammatical errors but even it isn’t, correct your mistakes"
+    },
+    {
+        "name":"complete",
+        "bg":"#A0C878",
+        "top":"0%",
+        "left":"",
+        "right":"15%",
+        "bottom":"",
+        "text":"Give the receiver a complete understanding of what you are discussing"
+    },
+
+    {
+        "name":"concrete",
+        "bg":"#FFA725",
+        "top":"",
+        "left":"5%",
+        "right":"",
+        "bottom":"20%",
+        "text":"Be concrete in your ideas by giving the right amount of detail"
+    },
+     {
+        "name":"concise",
+        "bg":"#F1BA88",
+        "top":"35%",
+        "left":"",
+        "right":"5%",
+        "bottom":"",
+        "text":"Be concise in your articulation by being precise and simple"
+    },
+    {
+        "name":"coherent",
+        "bg":"#81E7AF",
+        "top":"",
+        "left":"",
+        "right":"20%",
+        "bottom":"0%",
+        "text":"Be coherent in your speech with logic and smooth flow of information"
+    } ,
+    {
+        "name":"courteous",
+        "bg":"#E78B48",
+        "top":"",
+        "left":"25%",
+        "right":"",
+        "bottom":"-5%",
+        "text":"Show a courteous attitude by being polite, friendly, and open while communicating with others"
+    },
+    {
+        "name":"clear",
+        "bg":"#FFF2DB",
+        "top":"10%",
+        "left":"5%",
+        "right":"",
+        "bottom":"",
+        "text":"Be clear in your thoughts so your goals are communicated clearly too."
+    }
+]
