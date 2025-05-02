@@ -1,0 +1,66 @@
+[
+    {
+        "name":"correct",
+        "bg":"#EF88AD",
+        "top":"-5%",
+        "left":"32%",
+        "right":"",
+        "bottom":"",
+        "ans":["Share reliable facts","Ensure grammatical accuracy"]
+    },
+    {
+        "name":"complete",
+        "bg":"#A0C878",
+        "top":"0%",
+        "left":"",
+        "right":"15%",
+        "bottom":"",
+         "ans":["give all facts required to understand","ensure there’s a beginning, middle, and end to your narrative"]
+    },
+
+    {
+        "name":"concrete",
+        "bg":"#FFA725",
+        "top":"",
+        "left":"5%",
+        "right":"",
+        "bottom":"20%",
+         "ans":["Be precise about factual information","Avoid vagueness"]
+    },
+     {
+        "name":"concise",
+        "bg":"#F1BA88",
+        "top":"35%",
+        "left":"",
+        "right":"5%",
+        "bottom":"",
+         "ans":["be as brief as possible","Condense information in terms of what’s essential to know"]
+    },
+    {
+        "name":"coherent",
+        "bg":"#81E7AF",
+        "top":"",
+        "left":"",
+        "right":"20%",
+        "bottom":"0%",
+         "ans":["maintain a smooth flow of information","Be logical and systematic in your presenting ideas"]
+    } ,
+    {
+        "name":"courteous",
+        "bg":"#E78B48",
+        "top":"",
+        "left":"25%",
+        "right":"",
+        "bottom":"-5%",
+         "ans":["be polite","Be friendly","Be open-minded"]
+    },
+    {
+        "name":"clear",
+        "bg":"#FFF2DB",
+        "top":"10%",
+        "left":"5%",
+        "right":"",
+        "bottom":"",
+         "ans":["organize ideas in a structured way","short and simple sentences","Your goals and purpose should come across in an understandable way"]
+    }
+]
