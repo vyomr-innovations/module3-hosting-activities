@@ -1,7 +1,15 @@
 [
     {
         "name":"Competent",
-        "bg":"#f57d62",
+        "box":[
+            {
+                "top":"-80px",
+                "left":"",
+                "right":"-155%",
+                "bottom":""
+            }
+                    ],
+        "bg":"",
         "top":"2%",
         "left":"36%",
         "right":"",
@@ -10,7 +18,15 @@
     },
     {
         "name":"Confident",
-        "bg":"#f57d62",
+        "box":[
+            {
+                "top":"3%",
+                "left":"",
+                "right":"-170%",
+                "bottom":""
+            }
+                    ],
+        "bg":"",
         "top":"13%",
         "left":"",
         "right":"21%",
@@ -18,18 +34,18 @@
         "text":"Believe in ourselves, do what we can, take our time to complete things"
     },
 
-    {
-        "name":"Connected",
-        "bg":"#f57d62",
-        "top":"",
-        "left":"16%",
-        "right":"",
-        "bottom":"22%",
-        "text":"Express emotions in a safe community, solve problems, participate in our community"
-    },
+    
      {
         "name":"Character",
-        "bg":"#f57d62",
+        "box":[
+            {
+                "top":"3%",
+                "left":"105%",
+                "right":"",
+                "bottom":""
+            }
+                    ],
+        "bg":"",
         "top":"39%",
         "left":"",
         "right":"15%",
@@ -38,7 +54,15 @@
     },
     {
         "name":"Contribution",
-        "bg":"#f57d62",
+        "box":[
+            {
+                "top":"30%",
+                "left":"105%",
+                "right":"",
+                "bottom":""
+            }
+                    ],
+        "bg":"",
         "top":"",
         "left":"",
         "right":"25%",
@@ -47,7 +71,15 @@
     } ,
     {
         "name":"Coping skills",
-        "bg":"#f57d62",
+        "box":[
+            {
+                "top":"40%",
+                "left":"-170%",
+                "right":"",
+                "bottom":""
+            }
+                    ],
+        "bg":"",
         "top":"",
         "left":"32%",
         "right":"",
@@ -55,8 +87,33 @@
         "text":"Learn positive behavior by being good listeners, kind speakers, and generous doers"
     },
     {
+        "name":"Connected",
+        "box":[
+            {
+                "top":"3%",
+                "left":"-170%",
+                "right":"",
+                "bottom":""
+            }
+                    ],
+        "bg":"",
+        "top":"",
+        "left":"16%",
+        "right":"",
+        "bottom":"22%",
+        "text":"Express emotions in a safe community, solve problems, participate in our community"
+    },
+    {
         "name":"Control",
-        "bg":"#f57d62",
+        "box":[
+            {
+                "top":"3%",
+                "left":"-170%",
+                "right":"",
+                "bottom":""
+            }
+                    ],
+        "bg":"",
         "top":"20%",
         "left":"19%",
         "right":"",
