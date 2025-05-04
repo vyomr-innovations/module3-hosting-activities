@@ -1,0 +1,66 @@
+[
+    {
+        "name":"Competent",
+        "bg":"#f57d62",
+        "top":"2%",
+        "left":"36%",
+        "right":"",
+        "bottom":"",
+        "text":"Focus on strengths, make and correct safe mistakes, trust ourselves."
+    },
+    {
+        "name":"Confident",
+        "bg":"#f57d62",
+        "top":"13%",
+        "left":"",
+        "right":"21%",
+        "bottom":"",
+        "text":"Believe in ourselves, do what we can, take our time to complete things"
+    },
+
+    {
+        "name":"Connected",
+        "bg":"#f57d62",
+        "top":"",
+        "left":"16%",
+        "right":"",
+        "bottom":"22%",
+        "text":"Express emotions in a safe community, solve problems, participate in our community"
+    },
+     {
+        "name":"Character",
+        "bg":"#f57d62",
+        "top":"39%",
+        "left":"",
+        "right":"15%",
+        "bottom":"",
+        "text":"Show a positive and helpful attitude towards others. Grow from every situation."
+    },
+    {
+        "name":"Contribution",
+        "bg":"#f57d62",
+        "top":"",
+        "left":"",
+        "right":"25%",
+        "bottom":"8%",
+        "text":"Make positive changes by giving your time and skills to people and"
+    } ,
+    {
+        "name":"Coping skills",
+        "bg":"#f57d62",
+        "top":"",
+        "left":"32%",
+        "right":"",
+        "bottom":"3%",
+        "text":"Learn positive behavior by being good listeners, kind speakers, and generous doers"
+    },
+    {
+        "name":"Control",
+        "bg":"#f57d62",
+        "top":"20%",
+        "left":"19%",
+        "right":"",
+        "bottom":"",
+        "text":"Take one step at a time. Learn to do things differently."
+    }
+]
