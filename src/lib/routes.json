@@ -30,13 +30,25 @@
      {
         "link": "C22-L1-A3",
         "activity": "Qualities of Resilence"
+    }, 
+    {
+        "link": "C22-L1-Summary",
+        "activity": "Video to revise"
     },
     {
         "link": "C22-L2-A4",
         "activity": "7Cs of resilience"
     },
     {
+        "link": "C22-L2-Summary",
+        "activity": "Video to revise"
+    },
+    {
         "link": "C22-L3-A2",
         "activity": "7Cs of resilience"
+    },
+     {
+        "link": "C22-L3-A5",
+        "activity": "Summary"
     }
 ]
