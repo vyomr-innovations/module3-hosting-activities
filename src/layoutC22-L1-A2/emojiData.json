@@ -1,0 +1,39 @@
+[
+    {
+        "emoji":"/emoji/Anger.jpg",
+        "text":"Anger"
+    },
+
+    {
+        "emoji":"/emoji/happy.jpg",
+        "text":"Happy"
+    },
+    
+    {
+        "emoji":"/emoji/sadness.jpg",
+        "text":"Sadness"
+    },
+    
+    {
+        "emoji":"/emoji/joy.jpg",
+        "text":"Joy"
+    },
+    {
+        "emoji":"/emoji/fear.jpg",
+        "text":"Fear"
+    },
+    
+    {
+        "emoji":"/emoji/trust.jpg",
+        "text":"Trust"
+    },
+    
+    {
+        "emoji":"/emoji/disgust.jpg",
+        "text":"Disgust"
+    },
+    {
+        "emoji":"/emoji/surprising.jpg",
+        "text":"Surprising"
+    }
+]

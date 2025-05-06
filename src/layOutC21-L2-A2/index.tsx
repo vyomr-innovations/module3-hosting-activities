@@ -26,11 +26,12 @@ const LayOutC21L2A2 = () => {
               right: item.right,
               bottom: item.bottom,
               backgroundColor: item.bg,
+              scrollbarWidth:"none"
             }}
-            className="absolute hover:scale-105 cursor-pointer   shadow-md shadow-black flex justify-center items-center  border border-black   min-h-[200px] min-w-[200px]  rounded-full"
+            className="absolute hover:scale-105 cursor-pointer  overflow-y-auto shadow-md shadow-black flex justify-center items-center  border border-black   min-h-[200px] min-w-[200px]  rounded-full"
           >
             {dataIndex.includes(index) ? (
-              <div className=" w-[150px] h-[150px] text-lg   rounded-full  text-center ">
+              <div className=" w-[160px] h-[140px] text-lg  rounded-full  text-center ">
                 {item.text}
               </div>
             ) : (

@@ -1,0 +1,31 @@
+[
+    {
+        "text":"What about you? How do you practice public speaking?",
+        "val":"Rapport"
+    },
+    
+    {
+        "text":"I completely understand that you prefer privacy more than public speaking, but this is a way to learn something new!",
+        "val":"Empathy"
+    },
+    
+    {
+        "text":"I believe that you have all the qualities for public speaking, but you lack the motivation to do so.",
+        "val":"Assertive"
+    },
+    
+    {
+        "text":"Maybe you can practice in between classes. I can listen to your speech if you want.",
+        "val":"Flexibility"
+    },
+    
+    {
+        "text":"I just feel that you’d be so good at it!",
+        "val":"Intuition"
+    },
+    
+    {
+        "text":"Sometimes we have to take a leap of faith and believe that going out of our comfort zone can be rewarding.",
+        "val":"Trust"
+    }
+]

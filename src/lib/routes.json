@@ -27,6 +27,10 @@
         "link": "C21-L3-A1B",
         "activity": "Match actions to the 7Cs"
     },
+    {
+        "link": "C22-L1-A2",
+        "activity": "Emotions and Activities"
+    },
      {
         "link": "C22-L1-A3",
         "activity": "Qualities of Resilence"
@@ -55,5 +59,10 @@
     {
         "link": "C22-L3-AA",
         "activity": "Resilience in Conversation"
+    } ,
+    
+    {
+        "link": "C24-L2-A1",
+        "activity": "Assertive Communication with A-R-E.F.I.T"
     }
 ]

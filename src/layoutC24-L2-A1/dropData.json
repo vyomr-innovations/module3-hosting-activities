@@ -1,0 +1,40 @@
+[
+    {
+        "heading":"Assertive",
+        "bg":"#fff2cd",
+        "value":"Assertive",
+        "firstVal":"ability to express your needs in a confident and respectful manner"
+    },
+     {
+        "heading":"Rapport building",
+        "bg":"#c8daf8",
+        "value":"Rapport",
+        "firstVal":"To be curious about others and enjoying connecting."
+    } ,
+    {
+        "heading":"Empathy",
+        "bg":"#ebd1dc",
+        "value":"Empathy",
+        "firstVal":"Understanding the needs of others."
+    },
+    {
+        "heading":"Flexibility",
+        "bg":"#dce9d7",
+        "value":"Flexibility",
+        "firstVal":"Be open-minded about possibilities. Be willing to adapt."
+    },
+    
+    {
+        "heading":"Intuition",
+        "bg":"#cccccc",
+        "value":"Intuition",
+        "firstVal":"Do what feels right. Listen to your heart"
+    },
+    
+    {
+        "heading":"Trust",
+        "bg":"#f6b26b",
+        "value":"Trust",
+        "firstVal":"Believe in yourself and others for something to work out."
+    }
+]
