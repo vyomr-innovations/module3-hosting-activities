@@ -21,7 +21,9 @@ const Page = () => {
         allowFullScreen
       ></iframe>
 
+<label className="text-2xl font-bold text-black" htmlFor="qus">List any 5 Cs of resilience shown by Harry.</label>
       <textarea
+      id="qus"
       value={userVal}
       onChange={(e)=>setUserVal(e.target.value)}
       placeholder="write here...." className="text-2xl text-black text-center min-w-[400px] min-h-[80px] outline-none border border-black rounded-lg" />
