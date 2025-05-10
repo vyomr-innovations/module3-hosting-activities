@@ -12,17 +12,22 @@ type myProps = {
 };
 const MainScreen = ({ setIsfirstScreen }: myProps) => {
   const [dropItems, setDropItems] = useState<{ [key: number]: string[] }>([]);
-  const [filter, setFilter] = useState(dragData);
+  const [shuffle,setShuffle]=useState(dragData)
+  const [filter, setFilter] = useState(shuffle);
 
   const handleDrag = (e: React.DragEvent, item: dragType) => {
     e.dataTransfer?.setData("drag", JSON.stringify(item));
+
   };
 
   const handleDrop = (e: React.DragEvent, value: string, index: number) => {
     const dropItem = JSON.parse(e.dataTransfer?.getData("drag"));
 
     if (value === dropItem.val) {
-      const updateData = filter.filter((item) => item.text != dropItem.text);
+
+      const Shuffled = [...filter].sort(()=> Math.random() - 0.5)
+      setShuffle(Shuffled)
+      const updateData = Shuffled.filter((item) => item.text != dropItem.text);
       setDropItems((prev) => ({
         ...prev,
         [index]: prev[index]
