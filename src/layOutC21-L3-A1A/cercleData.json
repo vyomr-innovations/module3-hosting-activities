@@ -1,6 +1,14 @@
 [
     {
         "name":"correct",
+         "box":[
+{
+    "top":"-80px",
+    "left":"-150%",
+    "right":"",
+    "bottom":""
+}
+        ],
         "bg":"#EF88AD",
         "top":"-5%",
         "left":"32%",
@@ -10,6 +18,14 @@
     },
     {
         "name":"complete",
+         "box":[
+{
+    "top":"3%",
+    "left":"",
+    "right":"-150%",
+    "bottom":""
+}
+        ],
         "bg":"#A0C878",
         "top":"0%",
         "left":"",
@@ -20,6 +36,14 @@
 
     {
         "name":"concrete",
+        "box":[
+            {
+                "top":"3%",
+                "left":"",
+                "right":"105%",
+                "bottom":""
+            }
+                    ],
         "bg":"#FFA725",
         "top":"",
         "left":"5%",
@@ -29,6 +53,14 @@
     },
      {
         "name":"concise",
+           "box":[
+            {
+                "top":"30%",
+                "left":"105%",
+                "right":"",
+                "bottom":""
+            }
+                    ],
         "bg":"#F1BA88",
         "top":"35%",
         "left":"",
@@ -38,6 +70,14 @@
     },
     {
         "name":"coherent",
+         "box":[
+            {
+                "top":"40%",
+                "left":"",
+                "right":"-160%",
+                "bottom":""
+            }
+                    ],
         "bg":"#81E7AF",
         "top":"",
         "left":"",
@@ -47,6 +87,14 @@
     } ,
     {
         "name":"courteous",
+        "box":[
+            {
+                "top":"20%",
+                "left":"-160%",
+                "right":"",
+                "bottom":""
+            }
+                    ],
         "bg":"#E78B48",
         "top":"",
         "left":"25%",
@@ -56,6 +104,14 @@
     },
     {
         "name":"clear",
+         "box":[
+            {
+                "top":"3%",
+                "left":"-160%",
+                "right":"",
+                "bottom":""
+            }
+                    ],
         "bg":"#FFF2DB",
         "top":"10%",
         "left":"5%",
