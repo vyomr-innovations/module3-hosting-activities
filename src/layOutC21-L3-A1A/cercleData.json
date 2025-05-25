@@ -14,7 +14,7 @@
         "left":"32%",
         "right":"",
         "bottom":"",
-        "text":"Your language should be free of factual and grammatical errors but even it isn’t, correct your mistakes"
+        "text":"Your language should be free of factual and grammatical errors but even it isn’t, correct your mistakes."
     },
     {
         "name":"complete",
@@ -31,7 +31,7 @@
         "left":"",
         "right":"15%",
         "bottom":"",
-        "text":"Give the receiver a complete understanding of what you are discussing"
+        "text":"Give the receiver a complete understanding of what you are discussing."
     },
 
     {
@@ -49,7 +49,7 @@
         "left":"5%",
         "right":"",
         "bottom":"20%",
-        "text":"Be concrete in your ideas by giving the right amount of detail"
+        "text":"Be concrete in your ideas by giving the right amount of detail."
     },
      {
         "name":"concise",
@@ -66,7 +66,7 @@
         "left":"",
         "right":"5%",
         "bottom":"",
-        "text":"Be concise in your articulation by being precise and simple"
+        "text":"Be concise in your articulation by being precise and simple."
     },
     {
         "name":"coherent",
@@ -83,7 +83,7 @@
         "left":"",
         "right":"20%",
         "bottom":"0%",
-        "text":"Be coherent in your speech with logic and smooth flow of information"
+        "text":"Be coherent in your speech with logic and smooth flow of information."
     } ,
     {
         "name":"courteous",
@@ -100,7 +100,7 @@
         "left":"25%",
         "right":"",
         "bottom":"-5%",
-        "text":"Show a courteous attitude by being polite, friendly, and open while communicating with others"
+        "text":"Show a courteous attitude by being polite, friendly, and open while communicating with others."
     },
     {
         "name":"clear",
