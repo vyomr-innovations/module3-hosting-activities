@@ -2,19 +2,23 @@
 import React, { useState } from "react";
 import BoxData from "@/layOutC21-L3-A1B/cercleData.json";
 import MasterLiat from "@/layOutC21-L3-A1B/dragData.json";
+import Welldone from "@/components/wellDone";
+const Confetti = dynamic(() => import("react-confetti"), {
+  ssr: false,
+});
+import { useWindowSize } from "react-use";
+import dynamic from "next/dynamic";
 
 type myDataType = {
   name: string;
 };
 
-type myProps = {
-  setIsfirstScreen: (value: string) => void;
-};
-
-const MainScreen = ({ setIsfirstScreen }: myProps) => {
+const MainScreen = () => {
+    const { width, height } = useWindowSize();
   const [dropItems, setDropItems] = useState<{ [key: number]: string[] }>({});
   const [shuffle, setShuffle] = useState(MasterLiat);
   const [filter, setFilter] = useState(shuffle);
+  const [open,setOpen]=useState(false)
   const [checkResult, setCheckResult] = useState<{ [key: number]: boolean[] }>(
     {}
   );
@@ -63,28 +67,39 @@ const MainScreen = ({ setIsfirstScreen }: myProps) => {
     });
   };
 
-  const handleCheck = () => {
-    const result: { [key: number]: boolean[] } = {};
+const handleCheck = () => {
+  const result: { [key: number]: boolean[] } = {};
+  let allCorrect = true;
 
-    Object.keys(dropItems).forEach((key) => {
-      const index = parseInt(key);
-      const dropped = dropItems[index] || [];
-      const correctAnswers = BoxData[index]?.ans || [];
+  for (const key in BoxData) {
+    const index = parseInt(key);
+    const dropped = dropItems[index] || [];
+    const correctAnswers = BoxData[index]?.ans || [];
 
-      result[index] = dropped.map((item) =>
-        correctAnswers.some(
-          (ans) => ans.trim().toLowerCase() === item.trim().toLowerCase()
-        )
-      );
-    });
-
-    setCheckResult(result);
-    if (result) {
-     setTimeout(()=>{
- setIsfirstScreen("Result");
-     },3000)
+    // Check if the number of items dropped is equal to number of correct answers
+    if (dropped.length !== correctAnswers.length) {
+      allCorrect = false;
     }
-  };
+
+    result[index] = dropped.map((item) => {
+      const isCorrect = correctAnswers.some(
+        (ans) => ans.trim().toLowerCase() === item.trim().toLowerCase()
+      );
+      if (!isCorrect) allCorrect = false;
+      return isCorrect;
+    });
+  }
+
+  setCheckResult(result);
+
+  // Show result screen only if all answers are correct
+  if (allCorrect) {
+    setTimeout(() => {
+      setOpen(true)
+    }, 3000);
+  }
+};
+
 
   return (
     <div className="min-h-screen p-10 flex justify-center flex-col gap-20 items-center bg-[#F8FAFC]">
@@ -115,7 +130,7 @@ const MainScreen = ({ setIsfirstScreen }: myProps) => {
         <div className="col-span-4 w-full flex justify-center items-center gap-1 h-[600px] rounded-lg border-b border-black overflow-y-scroll flex-wrap">
           {filter.length === 0 ? (
             <button
-              className="bg-violet-900 px-8 py-2 rounded-lg text-white"
+              className="bg-violet-900 cursor-pointer px-8 py-2 rounded-lg text-white"
               onClick={handleCheck}
             >
               Check
@@ -191,6 +206,14 @@ const MainScreen = ({ setIsfirstScreen }: myProps) => {
         </div>
 
         
+     {open ? 
+        <>
+        <Welldone setOpen={setOpen} open={open} />
+        
+              <Confetti width={width} height={height} className={` h-full `} />
+        </>:""
+
+      }
       </div>
     </div>
   );

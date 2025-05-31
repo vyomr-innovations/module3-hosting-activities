@@ -2,15 +2,15 @@
 import React, { useState } from "react";
 import dropData from "@/layoutC24-L2-A1/dropData.json";
 import dragData from "@/layoutC24-L2-A1/dragData.json";
+import Welldone from "@/components/wellDone";
 type dragType = {
   text: string;
   val: string;
 };
 
-type myProps = {
-  setIsfirstScreen: (value: string) => void;
-};
-const MainScreen = ({ setIsfirstScreen }: myProps) => {
+
+const MainScreen = () => {
+  const [open,setOpen]=useState(false)
   const [dropItems, setDropItems] = useState<{ [key: number]: string[] }>([]);
   const [shuffle,setShuffle]=useState(dragData)
   const [filter, setFilter] = useState(shuffle);
@@ -37,7 +37,7 @@ const MainScreen = ({ setIsfirstScreen }: myProps) => {
 
       setFilter(updateData);
       if (updateData.length === 0) {
-        setIsfirstScreen("result");
+      setOpen(true)
       }
     }
   };
@@ -47,12 +47,12 @@ const MainScreen = ({ setIsfirstScreen }: myProps) => {
       <h4 className="text-3xl font-bold text-center text-black">
         Assertive communication with A-R-E-F-I-T
       </h4>
-      <div className="grid grid-cols-12 w-full place-items-center gap-1">
+      <div className="grid grid-cols-12 w-full  gap-1">
         <h4 className="text-2xl font-semibold col-span-12 text-center my-4 text-black">
           Recall what each alphabet stands for.
         </h4>
         <div className="col-span-4  ">
-          <div className="h-[550px] overflow-y-auto flex items-center flex-col gap-1">
+          <div className=" flex items-center flex-col gap-1">
             {filter.map((item, index) => (
               <span
                 key={index}
@@ -99,7 +99,9 @@ const MainScreen = ({ setIsfirstScreen }: myProps) => {
           </div>
         </div>
       </div>
+      <Welldone open={open} setOpen={setOpen}/>
     </div>
+
   );
 };
 
