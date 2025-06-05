@@ -115,7 +115,7 @@ const MainScreen = () => {
         </div>
       </div>
       {showOptionDialog && selectedItem && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div className="fixed inset-0 bg-[#00000074] bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-5 rounded-lg max-w-md w-full shadow-xl">
             <h2 className="text-xl font-bold  text-center">
               Please assign time for this task
