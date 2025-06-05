@@ -2,24 +2,31 @@
 import React, { useState } from "react";
 import dropData from "@/layoutC18-L1-A3/dropData.json";
 import dragData from "@/layoutC18-L1-A3/dragData.json";
-import Welldone from "@/components/wellDone";
+// import Welldone from "@/components/wellDone";
+import { v4 as uuidv4 } from "uuid";
 type dragType = {
   text: string;
   val: string;
 };
 
 const MainScreen = () => {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
   // Pehle ye tha: string[]
   // Ab hoga: { text: string; time: string }[]
   const [dropItems, setDropItems] = useState<{
-    [key: number]: { text: string; time: string }[];
+    [key: number]: { id: string; text: string; time: string }[];
   }>({});
+
   const [pendingDropIndex, setPendingDropIndex] = useState<number | null>(null);
 
   const [shuffle, setShuffle] = useState(dragData);
   const [filter, setFilter] = useState(shuffle);
-  const [selectedItem, setSelectedItem] = useState<dragType | null>(null);
+  const [selectedItem, setSelectedItem] = useState<{
+    id: string;
+    text: string;
+    time: string;
+  } | null>(null);
+
   const [showOptionDialog, setShowOptionDialog] = useState(false);
 
   const handleDrag = (e: React.DragEvent, item: dragType) => {
@@ -35,7 +42,15 @@ const MainScreen = () => {
       const updateData = Shuffled.filter((item) => item.text !== dropItem.text);
       setFilter(updateData);
 
-      setSelectedItem(dropItem);
+      const uniqueId = uuidv4();
+      setSelectedItem({ id: uniqueId, text: dropItem.text, time: "" });
+      setDropItems((prev) => ({
+        ...prev,
+        [index]: prev[index]
+          ? [...prev[index], { id: uniqueId, text: dropItem.text, time: "" }]
+          : [{ id: uniqueId, text: dropItem.text, time: "" }],
+      }));
+
       setPendingDropIndex(index);
       setShowOptionDialog(true);
     }
@@ -45,17 +60,18 @@ const MainScreen = () => {
     if (selectedItem && pendingDropIndex !== null) {
       setDropItems((prev) => ({
         ...prev,
-        [pendingDropIndex]: prev[pendingDropIndex]
-          ? [...prev[pendingDropIndex], { text: selectedItem.text, time }]
-          : [{ text: selectedItem.text, time }],
+        [pendingDropIndex]: prev[pendingDropIndex].map((item) =>
+          item.id === selectedItem.id ? { ...item, time } : item
+        ),
       }));
 
       setSelectedItem(null);
       setPendingDropIndex(null);
       setShowOptionDialog(false);
-      if (filter.length === 0) {
-        setOpen(true);
-      }
+
+      // if (filter.length === 0) {
+      //   setOpen(true);
+      // }
     }
   };
 
@@ -100,10 +116,15 @@ const MainScreen = () => {
                   {item.heading}
                 </h5>
                 <div className=" p-1 flex justify-start items-center gap-1 flex-col ">
-                  {dropItems[index]?.map((i, index) => (
+                  {dropItems[index]?.map((i, innerIdx) => (
                     <h5
-                      key={index}
-                      className=" p-1 text-md text-center border rounded-lg font-bold min-w-[300px]  border-black"
+                      onClick={() => {
+                        setSelectedItem(i);
+                        setPendingDropIndex(index);
+                        setShowOptionDialog(true);
+                      }}
+                      key={innerIdx}
+                      className=" p-1 text-md cursor-pointer text-center border rounded-lg font-bold min-w-[300px]  border-black"
                     >
                       {i.text} - {i.time} min
                     </h5>
@@ -138,7 +159,7 @@ const MainScreen = () => {
         </div>
       )}
 
-      <Welldone open={open} setOpen={setOpen} />
+      {/* <Welldone open={open} setOpen={setOpen} /> */}
     </div>
   );
 };
