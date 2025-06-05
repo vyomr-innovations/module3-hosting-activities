@@ -27,7 +27,7 @@ const Welldone = ({ open, setOpen }: myProps) => {
   if (open) {
     sound?.play();
   } else {
-    sound?.remove();
+    sound?.pause();
   }
   return (
     <AlertDialog open={open} onOpenChange={setOpen}>

@@ -1,0 +1,56 @@
+[
+    {
+        "text":"Homework",
+        "val":"indoor"
+    },
+    
+    {
+        "text":"Playing Sports",
+        "val":"outdoor"
+    },
+    
+    {
+        "text":"Sleeping",
+        "val":"indoor"
+    },
+    
+    {
+        "text":"Meeting Friends",
+        "val":"outdoor"
+    },
+    
+    {
+        "text":"Watching TV",
+        "val":"indoor"
+    },
+    
+    {
+        "text":"Helping with Grocery",
+        "val":"indoor"
+    },
+    
+    {
+        "text":"Practicing Hobbies",
+        "val":"indoor"
+    },
+    
+    {
+        "text":"Tidying Up",
+        "val":"indoor"
+    },
+    
+    {
+        "text":"Exercising",
+        "val":"indoor"
+    },
+    
+    {
+        "text":"Eating",
+        "val":"indoor"
+    },
+    
+    {
+        "text":"Studying",
+        "val":"indoor"
+    }
+]
