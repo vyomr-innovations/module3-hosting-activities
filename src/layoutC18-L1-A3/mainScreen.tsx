@@ -78,7 +78,7 @@ const MainScreen = () => {
   return (
     <div className="min-h-screen bg-[#F8FAFC] flex justify-start gap-3 p-5 items-center flex-col">
       <h4 className="text-3xl font-bold text-center text-black">
-        sort into spaces - outdoor/indoor
+       Sort Into Spaces - Outdoor/Indoor
       </h4>
       <div className="grid grid-cols-12 w-full  gap-5">
         <div
