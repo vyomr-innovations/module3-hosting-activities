@@ -166,7 +166,7 @@ const RewardChart = () => {
       </div>
       {/* ======================= */}
       <div className="flex gap-2">
-        <Category taskList={masterTasks} handleTaskClick={assignTaskToSlot} />
+        <Category setMasterTasks={setMasterTasks} taskList={masterTasks} handleTaskClick={assignTaskToSlot} />
         <MainLayout
           slots={slots}
           removeTaskFromSlot={removeTaskFromSlot}
