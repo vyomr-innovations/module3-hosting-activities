@@ -38,10 +38,9 @@ const LayoutC20L2A4 = () => {
     setOpen(false); // close dialog
   };
 
-  const handleDel =(taskIndex:number)=>{
-   setMasterTasks((prev)=>prev.filter((_,index)=>index != taskIndex)) 
-
-  }
+  const handleDel = (taskIndex: number) => {
+    setMasterTasks((prev) => prev.filter((_, index) => index != taskIndex));
+  };
   return (
     <div className="min-h-screen p-8 bg-[#F8FCFA]  flex justify-start items-center flex-col gap-10">
       <div>
@@ -53,7 +52,7 @@ const LayoutC20L2A4 = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-12 w-full  ">
+       <div className="grid grid-cols-12 w-full  ">
         <div className="col-span-12 w-full flex justify-center items-center gap-2 ">
           <label htmlFor="name" className="text-2xl font-bold">
             Name
@@ -65,8 +64,9 @@ const LayoutC20L2A4 = () => {
           />
         </div>
       </div>
-      <div className="w-full border border-black  ">
-        <div className="grid grid-cols-12 w-full bg-violet-300  border-b border-black">
+     <div className="w-full max-w-[90%]">
+      <div className="w-full border border-black rounded-lg overflow-hidden  ">
+        <div className="grid grid-cols-12 w-full bg-yellow-400  border-b border-black">
           <div className="col-span-2   "></div>
           <div className="col-span-3 w-full   ">
             <h4 className="font-bold p-2 text-center ">Action to Take</h4>
@@ -82,6 +82,21 @@ const LayoutC20L2A4 = () => {
 
           <div className="col-span-1 w-full   "></div>
         </div>
+
+        <div className="grid grid-cols-12 w-full ">
+          <div className="col-span-2    "></div>
+          <div
+            onClick={() => {
+              setOpen(true);
+              setSameTask(false);
+            }}
+            className="col-span-3 p-1 border border-dotted border-black active:scale-95 transition-all duration-300  border-t-0   "
+          >
+            <IoMdAdd className="text-3xl cursor-pointer  text-black text-center w-full" />
+          </div>
+          <div className="col-span-3  w-full   "></div>
+          <div className="col-span-4 w-full  "></div>
+        </div>
         {masteTraskList.map((item, index) => (
           <div
             key={index}
@@ -90,43 +105,33 @@ const LayoutC20L2A4 = () => {
             <div className="col-span-2   ">
               <h4 className="  text-black p-3 text-center ">{index + 1}</h4>
             </div>
-            <div className="col-span-3 w-full  ">
-              <h4 className=" font-medium text-violet-800 p-3 text-center ">
+            <div className="col-span-3 w-full border-r border-l  ">
+              <h4 className=" font-medium text-black p-3 text-center ">
                 {item.task}
               </h4>
             </div>
-            <div className="col-span-3 w-full     ">
+            <div className="col-span-3 w-full   border-r border-l    ">
               <h4 className=" p-3 text-center ">
                 <CategoryMenu />
               </h4>
             </div>
-            <div className="col-span-3 w-full      ">
+            <div className="col-span-3 w-full   border-r border-l     ">
               <h4 className=" p-3 text-center ">
                 <ProblemMenu />
               </h4>
             </div>
 
-            <div className="col-span-1 w-full   ">
+            <div className="col-span-1 w-full flex justify-center items-center  ">
               <h4 className=" p-3 text-center ">
-                <RiDeleteBin6Line onClick={()=>handleDel(index)} className="text-lg hover:text-red-600 cursor-pointer" />
+                <RiDeleteBin6Line
+                  onClick={() => handleDel(index)}
+                  className="text-lg hover:text-red-600 cursor-pointer"
+                />
               </h4>
             </div>
           </div>
         ))}
-        <div className="grid grid-cols-12 w-full ">
-          <div className="col-span-2    "></div>
-          <div
-            onClick={() => {
-              setOpen(true);
-              setSameTask(false);
-            }}
-            className="col-span-3 p-1 active:scale-95 transition-all duration-300 w-full bg-violet-900 border  border-[#00000094]  "
-          >
-            <IoMdAdd className="text-3xl cursor-pointer  text-white text-center w-full" />
-          </div>
-          <div className="col-span-3  w-full   "></div>
-          <div className="col-span-4 w-full  "></div>
-        </div>
+
         <Dialog open={open} onOpenChange={setOpen}>
           <DialogContent className="sm:max-w-[425px]">
             <DialogHeader>
@@ -170,6 +175,7 @@ const LayoutC20L2A4 = () => {
           </DialogContent>
         </Dialog>
       </div>
+     </div>
     </div>
   );
 };
