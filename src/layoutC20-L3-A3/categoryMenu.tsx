@@ -19,7 +19,7 @@ const CategoryMenu = () => {
         className="outline-none text-md cursor-pointer flex justify-center items-center gap-1 w-full "
       >
         {cetegotyName}
-       <IoMdArrowDropdown className="text-lg" />
+         <IoMdArrowDropdown className="text-lg" />
       </DropdownMenuTrigger>
 
       <DropdownMenuContent>
@@ -27,7 +27,6 @@ const CategoryMenu = () => {
           className="cursor-pointer"
           onClick={() => {
             setCategoryName("Reduce");
-            
           }}
         >
           Reduce
@@ -36,7 +35,7 @@ const CategoryMenu = () => {
           className="cursor-pointer"
           onClick={() => {
             setCategoryName("Reuse");
-           
+          
           }}
         >
           Reuse
@@ -45,7 +44,7 @@ const CategoryMenu = () => {
           className="cursor-pointer"
           onClick={() => {
             setCategoryName("Recycle");
-          
+           
           }}
         >
           Recycle
