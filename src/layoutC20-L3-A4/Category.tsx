@@ -28,11 +28,17 @@ interface myProps {
 const Category = ({ taskList, handleTaskClick, setMasterTasks }: myProps) => {
   const [taskName, setTaskName] = useState("");
   const [open, setOpen] = useState(false);
+   const [sameTask, setSameTask] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     if (taskName.trim() === "") return; // Empty name prevent
+     const caseTask = taskName.toLowerCase();
+       if (taskList.some((item) => item.name.toLowerCase() == caseTask)) {
+      setSameTask(true);
+      return;
+    }
 
     const newTask: Task = {
       id: Date.now(), // unique id
@@ -81,6 +87,13 @@ const Category = ({ taskList, handleTaskClick, setMasterTasks }: myProps) => {
               </Button>
             </DialogFooter>
           </form>
+            {sameTask ? (
+              <h1 className="text-center text-red-600 ">
+                This Task already in the list
+              </h1>
+            ) : (
+              ""
+            )}
         </DialogContent>
       </Dialog>
 
@@ -90,7 +103,7 @@ const Category = ({ taskList, handleTaskClick, setMasterTasks }: myProps) => {
         Master Task List
       </h1>
 
-      <ScrollArea className="w-[350px] rounded-md border p-2 backdrop-blur-2xl">
+      <ScrollArea className="md:w-[350px] 2xl:w-full rounded-md border p-2 backdrop-blur-2xl">
         <div className="flex flex-col gap-2 p-2 ">
           <button
             onClick={() => setOpen(true)}
