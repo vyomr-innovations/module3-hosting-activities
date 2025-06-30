@@ -1,6 +1,6 @@
 [
     {
-        "name":"correct",
+        "name":"Correct",
         "bg":"#EF88AD",
         "top":"-5%",
         "left":"32%",
@@ -9,17 +9,17 @@
         "ans":["Share reliable facts","Ensure grammatical accuracy"]
     },
     {
-        "name":"complete",
+        "name":"Complete",
         "bg":"#A0C878",
         "top":"0%",
         "left":"",
         "right":"15%",
         "bottom":"",
-         "ans":["give all facts required to understand","ensure there’s a beginning, middle, and end to your narrative"]
+         "ans":["Give all facts required to understand","Ensure there’s a beginning, middle, and end to your narrative"]
     },
 
     {
-        "name":"concrete",
+        "name":"Concrete",
         "bg":"#FFA725",
         "top":"",
         "left":"5%",
@@ -28,39 +28,39 @@
          "ans":["Be precise about factual information","Avoid vagueness"]
     },
      {
-        "name":"concise",
+        "name":"Concise",
         "bg":"#F1BA88",
         "top":"35%",
         "left":"",
         "right":"5%",
         "bottom":"",
-         "ans":["be as brief as possible","Condense information in terms of what’s essential to know"]
+         "ans":["Be as brief as possible","Condense information in terms of what’s essential to know"]
     },
     {
-        "name":"coherent",
+        "name":"Coherent",
         "bg":"#81E7AF",
         "top":"",
         "left":"",
         "right":"20%",
         "bottom":"0%",
-         "ans":["maintain a smooth flow of information","Be logical and systematic in your presenting ideas"]
+         "ans":["Maintain a smooth flow of information","Be logical and systematic in your presenting ideas"]
     } ,
     {
-        "name":"courteous",
+        "name":"Courteous",
         "bg":"#E78B48",
         "top":"",
         "left":"25%",
         "right":"",
         "bottom":"-5%",
-         "ans":["be polite","Be friendly","Be open-minded"]
+         "ans":["Be polite","Be friendly","Be open-minded"]
     },
     {
-        "name":"clear",
+        "name":"Clear",
         "bg":"#FFF2DB",
         "top":"10%",
         "left":"5%",
         "right":"",
         "bottom":"",
-         "ans":["organize ideas in a structured way","short and simple sentences","Your goals and purpose should come across in an understandable way"]
+         "ans":["Organize ideas in a structured way","Short and simple sentences","Your goals and purpose should come across in an understandable way"]
     }
 ]

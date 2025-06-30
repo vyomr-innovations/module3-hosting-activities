@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import BoxData from "@/layOutC21-L3-A1B/cercleData.json";
 import MasterLiat from "@/layOutC21-L3-A1B/dragData.json";
 import Welldone from "@/components/wellDone";
@@ -24,7 +24,11 @@ const MainScreen = () => {
   );
 
   const [showSol,setShowSol]=useState(false)
-
+useEffect(()=>{
+ const shuffled = [...filter].sort(() => Math.random() - 0.5);
+ setShuffle(shuffled);
+ setFilter(shuffled);
+},[])
   const handleDrag = (
     e: React.DragEvent,
     dragObj: myDataType,
@@ -39,9 +43,8 @@ const MainScreen = () => {
 
   const handleDrop = (e: React.DragEvent, index: number) => {
     const dropItem = JSON.parse(e.dataTransfer.getData("dragItem"));
-    const shuffled = [...filter].sort(() => Math.random() - 0.5);
-    setShuffle(shuffled);
-    const filterUpdate = shuffled.filter((item) => item.name !== dropItem.name);
+    const filterUpdate = filter.filter((item) => item.name !== dropItem.name);  
+
 
     // Remove from previous box if dragged from one
     if (dropItem.fromBox !== undefined) {
@@ -124,38 +127,43 @@ const handleCheck = () => {
         }
         </div>
 
-      <div className="grid grid-cols-12 gap-2 w-full">
+      <div className="grid grid-cols-12  gap-2 w-full">
        
         {/* Left draggable items */}
-        <div className="col-span-4 w-full flex justify-center items-center gap-1 h-[600px] rounded-lg border-b border-black overflow-y-scroll flex-wrap">
+        <div className="col-span-4 w-full  ">
+          <div className=" w-full p-3 flex justify-start items-center gap-1 h-[600px] rounded-lg border-b border-black overflow-y-scroll flex-col">
+
           {filter.length === 0 ? (
-            <button
+         <div className="h-full  flex justify-center items-center" >
+             <button
               className="bg-violet-900 cursor-pointer px-8 py-2 rounded-lg text-white"
               onClick={handleCheck}
             >
               Check
             </button>
+         </div>
           ) : (
             filter.map((item, index) => (
               <span
                 draggable
                 onDragStart={(e) => handleDrag(e, item)}
-                className="border-1 min-w-[400px] rounded-lg p-1 text-center text-lg border-violet-900"
+                className=" hover:cursor-grab active:cursor-grabbing border-1 w-full rounded-lg p-1 text-center text-lg border-violet-900"
                 key={index}
               >
                 {item.name}
               </span>
             ))
           )}
+          </div>
         </div>
 
         {/* Right drop circles */}
-        <div className="col-span-8 w-full">
+        <div className="col-span-8 w-full flex justify-center items-center">
           <div className="w-[800px] h-[600px] relative flex justify-center items-center">
             {/* Center circle */}
             <div className="w-[250px] h-[250px] shadow-md shadow-black flex justify-center items-center border border-black bg-[#D9DFC6] rounded-full">
               <h3 className="text-black font-bold text-2xl text-center">
-                7 Cs of communication
+                7 Cs of Communication
               </h3>
             </div>
 
