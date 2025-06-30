@@ -2,6 +2,8 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import EmojiData from "@/layoutC22-L1-A2/emojiData.json"
+import  nagativeEmotions from "@/layoutC22-L1-A2/nagitivEmotion.json"
+import  positiveEmotions from "@/layoutC22-L1-A2/positiveEmotion.json"
 
 const LayoutC22L1A2 = () => {
     const [activIndex,setActivIndex]=useState<number>()
@@ -21,6 +23,37 @@ const LayoutC22L1A2 = () => {
             <div className="grid grid-cols-12 gap-5 w-full place-items-center">
                 {
                     EmojiData.map((item,index)=>(
+
+                <div className={`${activIndex === index ? "border border-black":""} col-span-3 flex justify-center items-center flex-col gap-1 p-2 rounded-lg cursor-pointer`} key={index} onClick={()=>handleSelect(index)}>
+                    <Image className='rounded-full' src={item.emoji} width={100} height={100} alt='emoji'/>
+                    <span className='text-center'>{item.text}</span>
+                </div>
+                    ))
+                }
+            </div>
+            
+        </div>
+         <div className="col-span-6 w-full rounded-lg border border-black bg-violet-100 flex justify-center items-center flex-col gap-4 p-2">
+            <h3 className='text-xl text-black'>Emotions I feel in difficult situations</h3>
+            <div className="grid grid-cols-12 gap-5 w-full place-items-center">
+                {
+                    nagativeEmotions.map((item,index)=>(
+
+                <div className={`${activIndex === index ? "border border-black":""} col-span-3 flex justify-center items-center flex-col gap-1 p-2 rounded-lg cursor-pointer`} key={index} onClick={()=>handleSelect(index)}>
+                    <Image className='rounded-full' src={item.emoji} width={100} height={100} alt='emoji'/>
+                    <span className='text-center'>{item.text}</span>
+                </div>
+                    ))
+                }
+            </div>
+            
+        </div>
+
+         <div className="col-span-6 w-full rounded-lg border border-black bg-violet-100 flex justify-center items-center flex-col gap-4 p-2">
+            <h3 className='text-xl text-black'>Emotions I would like to feel.</h3>
+            <div className="grid grid-cols-12 gap-5 w-full place-items-center">
+                {
+                    positiveEmotions.map((item,index)=>(
 
                 <div className={`${activIndex === index ? "border border-black":""} col-span-3 flex justify-center items-center flex-col gap-1 p-2 rounded-lg cursor-pointer`} key={index} onClick={()=>handleSelect(index)}>
                     <Image className='rounded-full' src={item.emoji} width={100} height={100} alt='emoji'/>
